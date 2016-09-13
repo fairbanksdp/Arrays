@@ -27,3 +27,21 @@ print only14([1,4,1,4])
 print only14([1,3,1,4])
 print only14([1,1])
 print "\n"
+
+def no14(arr)
+  no1=true
+  no4=true
+  arr.each do|n|
+    if n==1
+      no1=false
+    elsif n==4
+      no4=false
+    end
+  end
+  no1||no4
+end
+print no14([1,2,3])
+print no14([1,2,3,4])
+print no14([4,2,3])
+print "\n"
+
